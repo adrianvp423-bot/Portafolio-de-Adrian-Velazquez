@@ -1,105 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/css/style.css" />
-  <title>Adrian Alejandro Velazquez </title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Adrian Alejandro Velazquez</title>
 </head>
 
 <body>
-  <header>
-    <h1> Adrian Velazquez</h1>
-    <nav>
-      <ul>
-        <li class="dropdown">
-          <a class="dropbtn">Menu</a>
+    <header>
+        <h1>Adrian Velazquez</h1>
 
-          <ul class="dropdown-content">
-            <li><a href="#AcercadeMi">Acerca de Mi</a></li>
-            <li><a href="#MisProyectos">Mis Proyectos</a></li>
-            <li><a href="#TemadeInteres">Tema de Interes</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-          </ul>
-      </ul>
-    </nav>
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-  </header>
-  <main>
-    <div class="contenedor" id="AcercadeMi">
-      <div class="texto-acerca">
-        <h1>Acerca de Mi</h1>
-        <p>
-          Hola, mi nombre es Adrian Velazquez, un chico apasionado por aprender
-          desarrollo de software. Me gusta mucho la programación y el desarrollo
-          de software. Ya tengo lo básico para tener una lógica de programación sólida.
-        </p>
-      </div>
+        <!-- Icono hamburguesa -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-      <img src="src/imgs/cicada.jpg" alt="Foto de Adrian Velazquez" class="mi-imagen" />
-    </div>
+        <!-- Menú navegable -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#AcercadeMi">Acerca de Mi</a></li>
+                <li><a href="#MisProyectos">Mis Proyectos</a></li>
+                <li><a href="#TemadeInteres">Tema de Interes</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="MisProyectos">
-      <h1>Mis Proyectos</h1>
-      <p>Aquí presento algunos proyectos personales que estoy desarrollando con esfuerzo para mejorar mi vida cotidiana
-      </p>
+    <main>
+        <div class="contenedor" id="AcercadeMi">
+            <div class="texto-acerca">
+                <h1>Acerca de Mi</h1>
+                <p>
+                    Hola, mi nombre es Adrian Velazquez, un chico apasionado por aprender desarrollo de software. Me gusta mucho
+                    la programación y el desarrollo de software. Ya tengo lo básico para tener una lógica de programación sólida y buena.
+                </p>
 
-      <div class="grid-proyectos">
-        <div class="card-proyecto">
-          <h3>Página Web Personal</h3>
-          <p>Mi propio portafolio hecho con HTML y CSS. Este proyecto me ayudó a mejorar el en el lenguage de css.</p>
+                <div class="Icono">
+                    <a href="https://github.com/adrianvp423-bot" target="_blank" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <img src="src/imgs/cicada.jpg" alt="Foto de Adrian Velazquez" class="mi-imagen" />
         </div>
 
-        <div class="card-proyecto">
-          <h3> programa basico</h3>
-          <p>Un programa basico de arreglo en javascritp que me pide que le crea al usuario un programa donde califique
-            a los meseros.</p>
-        </div>
+        <section id="MisProyectos">
+            <h1>Mis Proyectos</h1>
+            <p>
+                Aquí presento algunos proyectos personales que estoy desarrollando con esfuerzo para mejorar mi vida cotidiana.
+            </p>
 
-      </div>
-    </section>
-    <section id="TemadeInteres">
-      <h1>temas de interes</h1>
-      
-      <div class = "Intereses">
-        <div class ="intereses">
-        <h1>tegnologia</h1>
-        <p> me interesa la tegnologia, porque desde pequeño mi familia le gustaba jugar videojuegos y le encantaba
-           el mundo de la tegnologia y desde ese entonces me intereso este mundo. </p>
-      </p>
-      </div>
-      <div class = "intereses">
-        <h1>El Ingles</h1>
-        <p>
-          Me fascina el ingles ya que por ese medio uno puede adquirir muchas mas cosas de las que uno puede tener con el idioma castellano.
-        </p>
-      </div>
-      </div>
-    </section>
-    <section id="Contacto">
-      <form id="contactForm">
-        <h1> Contacto</h1>
-        <p> Escriba su solicitud aqui.</p>
+            <div class="grid-proyectos">
+                <div class="card-proyecto">
+                    <h3>Página Web Personal</h3>
+                    <p>Mi propio portafolio hecho con HTML y CSS. Este proyecto me ayudó a mejorar en el lenguaje de CSS.</p>
+                </div>
 
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" name="correo" placeholder="Correo">
-        <label for="formulario">comentario</label>
-        <input for="text" id="formulario" name="comentario" placeholder=" describa su solicitud">
+                <div class="card-proyecto">
+                    <h3>Programa básico</h3>
+                    <p>Un programa básico de arreglos en JavaScript que permite calificar a los meseros.</p>
+                </div>
+            </div>
+        </section>
 
-        <input type="submit" value="enviar">
-      </form>
-    </section>
+        <section id="mis-habilidades">
+            <h1>Mis Habilidades</h1>
 
+            <div class="skill">
+                <span>HTML5</span>
+                <div class="barra">
+                    <div class="progreso" valor="80%" style="width: 80%;"></div>
+                </div>
+            </div>
 
-  </main>
-  <footer>
-    <p>Hecho por tu buen vecino y Presidente petro.</p>
-  </footer>
-  <script src="./src/js/main.js"></script>
+            <div class="skill">
+                <span>CSS3</span>
+                <div class="barra">
+                    <div class="progreso" valor="50%" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="barra">
+                    <div class="progreso" valor="30%" style="width: 30%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="TemadeInteres">
+            <h1>Temas de interés</h1>
+
+            <div class="Intereses">
+                <div class="intereses">
+                    <h2>Tecnología</h2>
+                    <p>
+                    Mi fascinación comenzó con los videojuegos, pero hoy se ha ampliado la Curiosidad por cómo se hacen las cosas, 
+                    desde el hardware hasta el diseño. Me interesa mucho el futuro de la Inteligencia Artificial y cómo podemos asegurar la información digital (Ciberseguridad). 
+                   </p>
+                </div>
+
+                <div class="intereses">
+                    <h2>El Inglés</h2>
+                    <p>
+                    El inglés es una puerta de acceso al conocimiento global y un idioma esencial para la tecnología.
+                     Me encanta complementarlo con la lectura y el interés por conocer otras culturas, lo cual amplía mi visión del mundo y me ayuda a comunicarme mejor.                   
+                   </p>
+                </div>
+                <div class="intereses">
+                    <h2>Las Fotografía</h2>
+                    <p>
+                    Aunque aún no he tenido la oportunidad de practicarla, tengo un gran interés en aprender fotografía. Me atrae la idea de capturar momentos,
+                     manejar la composición visual , la luz , los colores y el ambiente para contar dentro de una imagen.
+                   </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contacto">
+            <form id="contactForm">
+                <h1>Contacto</h1>
+                <p>Escriba su solicitud aquí.</p>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo">
+
+                <label for="formulario">Comentario</label>
+                <input type="text" id="formulario" name="comentario" placeholder="Describa su solicitud">
+
+                <input type="submit" value="Enviar" class="btn-submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Adrian Velazquez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
